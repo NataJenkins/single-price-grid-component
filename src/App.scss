@@ -1,0 +1,33 @@
+@import "./_base.scss";
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6eff5;
+    padding: 72px 32px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    box-sizing: border-box;
+    border-radius: 8px;
+    overflow: hidden;
+    .join {
+        background-color: white;
+    }
+    .subscription {
+        background-color: $cyan;
+    }
+    .why-us {
+        background-color: $cyan;
+        opacity: 0.15;
+    }
+}
