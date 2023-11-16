@@ -18,7 +18,7 @@ function App() {
                     <p className="price">
                         $29 <span>per month</span>
                     </p>
-                    <p>Full access for less than $1 a day</p>
+                    <p className="access">Full access for less than $1 a day</p>
                     <button>Sign Up</button>
                 </div>
                 <div className="why-us">

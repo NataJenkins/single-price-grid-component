@@ -12,7 +12,7 @@ main {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 635px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -20,14 +20,80 @@ main {
     box-sizing: border-box;
     border-radius: 8px;
     overflow: hidden;
+    & > div {
+        box-sizing: border-box;
+        padding: 40px;
+    }
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+    }
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        color: white;
+    }
     .join {
         background-color: white;
+        grid-column: 1 / span 2;
+        h1 {
+            color: $cyan;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+        h2 {
+            color: $yellow;
+            margin-bottom: 11px;
+        }
+        p {
+            color: $grayish-blue;
+        }
     }
     .subscription {
         background-color: $cyan;
+        h2 {
+            margin-bottom: 24px;
+        }
+        .price {
+            font-size: 32px;
+            font-weight: 700;
+            span {
+                opacity: 0.5;
+                font-size: 16px;
+                font-weight: 400;
+                vertical-align: middle;
+            }
+        }
+        .access {
+            margin-bottom: 26px;
+        }
+        button {
+            width: 100%;
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding: 15px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            background-color: $yellow;
+            cursor: pointer;
+            font-weight: 700;
+        }
     }
     .why-us {
-        background-color: $cyan;
-        opacity: 0.15;
+        background-color: rgba($cyan, 0.6);
+        h2 {
+            margin-bottom: 18px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            color: white;
+            font-size: 14px;
+            opacity: 0.75;
+            line-height: 20px;
+        }
     }
 }
